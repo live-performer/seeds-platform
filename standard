@@ -86,7 +86,7 @@ These are used for debugging problems or examining the system.
 
 = Other =
 
- * live-performer-standard # metapackage for everything here
+ * ubuntu-standard # metapackage for everything here
  * (apt) # James Westby, enables access to private PPAs among other things
 
 == Blacklist ==
