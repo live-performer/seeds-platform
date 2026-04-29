@@ -54,29 +54,6 @@ These packages help with system integration
  * libsasl2-modules    # allows integration with MTA and login system
  * (avahi-daemon)      # some people do not like it, and it is not essential
 
-= Printing =
-
-Printing and printer configuration is a real weak spot in Debian, and in Linux in general. We will need to stay at the front of the curve here.
-
- * (cups)                     # our preferred printer management infrastructure
- * (cups-bsd)                 # gives us lpc, lpq, lpr, lprm
- * (cups-client)              # gives us cancel, cupstestppd, lp, lpoptions, lppasswd, lpstat, cupsaddsmb, accept, lpadmin, lpinfo, lpmove
- * foomatic-db-compressed-ppds  # the foomatic printer driver database
- * (cups-filters)
- * openprinting-ppds            # Most common drivers we want in desktop; less common are in o-p-extra
- * printer-driver-pnm2ppa       # several ppds require this
- * ghostscript
- * (hplip)     			# support for HP all-in-one printers
- * (printer-driver-min12xxw)	# support for KonicaMinolta PagePro 1200W, 1300W printers
- * (printer-driver-foo2zjs)	# support for printing to ZjStream-based printers
- * (printer-driver-splix)	# support for Samsung lasers
- * (printer-driver-pxljr)	# support for HP Color lasers
- * (printer-driver-c2esp)       # support for Kodak injket printers
- * (printer-driver-ptouch)      # support for Brother P-touch printers
- * (printer-driver-sag-gdi)     # support for Rico Aficio SPxxxx printers
- * (printer-driver-brlaser)     # support for some Brother laser printers
- * (printer-driver-m2300w)      # support for the Minolta magicolor 2300W/24000W color laser printers
-
 = GUI infrastructure =
 
 Packages used for X preconfiguration are just Recommends; removing them after initial installation should be relatively safe.
@@ -100,14 +77,9 @@ Fonts:
  * (fonts-noto-core)             # Noto Sans and Noto Serif are default in /etc/fonts/conf.d/60-latin.conf.
  * (fonts-ubuntu)                # desktop default via an override in the ubuntu-settings package
 
-= Debugging and Diagnostics =
-
- * (memtest86+)
-
 = Common Packaging Framework Stuff =
 
  * (packagekit)
- * (snapd)
 
 = Firmware updating support =
 
